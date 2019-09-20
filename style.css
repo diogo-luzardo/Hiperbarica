@@ -50,6 +50,7 @@ nav {
     height: 3px;
     background-color: white;
     margin: 5px;
+    transition: 0.8s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,8 +73,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translate(100%);
+        width: 45%;
+        transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
     .nav-links li {
@@ -86,4 +87,27 @@ nav {
 
 .nav-active {
     transform: translateX(0%)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.line .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line .line2 {
+    opacity: 0;
+}
+
+.line .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
