@@ -111,3 +111,21 @@ nav {
 .line .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.bgimg {
+    background-image: url('./bgsky.jpg'); 
+    background-size: cover;
+    height: 95vh;
+}
+
+.bgimg h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.bgimg h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
